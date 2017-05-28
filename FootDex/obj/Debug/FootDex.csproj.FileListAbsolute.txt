@@ -1,0 +1,153 @@
+D:\Arquivos Recentes\ISI\FootDex\FootDex\obj\Debug\FootDex.csprojResolveAssemblyReference.cache
+D:\Arquivos Recentes\ISI\FootDex\FootDex\bin\ApplicationInsights.config
+D:\Arquivos Recentes\ISI\FootDex\FootDex\bin\roslyn\csc.exe
+D:\Arquivos Recentes\ISI\FootDex\FootDex\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Arquivos Recentes\ISI\FootDex\FootDex\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Arquivos Recentes\ISI\FootDex\FootDex\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Arquivos Recentes\ISI\FootDex\FootDex\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Arquivos Recentes\ISI\FootDex\FootDex\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Arquivos Recentes\ISI\FootDex\FootDex\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Arquivos Recentes\ISI\FootDex\FootDex\bin\roslyn\System.Collections.Immutable.dll
+D:\Arquivos Recentes\ISI\FootDex\FootDex\bin\roslyn\System.Reflection.Metadata.dll
+D:\Arquivos Recentes\ISI\FootDex\FootDex\bin\roslyn\vbc.exe
+D:\Arquivos Recentes\ISI\FootDex\FootDex\bin\roslyn\VBCSCompiler.exe
+D:\Arquivos Recentes\ISI\FootDex\FootDex\bin\roslyn\VBCSCompiler.exe.config
+D:\Arquivos Recentes\ISI\FootDex\FootDex\bin\FootDex.dll.config
+D:\Arquivos Recentes\ISI\FootDex\FootDex\bin\FootDex.dll
+D:\Arquivos Recentes\ISI\FootDex\FootDex\bin\FootDex.pdb
+D:\Arquivos Recentes\ISI\FootDex\FootDex\bin\Microsoft.AI.Agent.Intercept.dll
+D:\Arquivos Recentes\ISI\FootDex\FootDex\bin\Microsoft.AI.DependencyCollector.dll
+D:\Arquivos Recentes\ISI\FootDex\FootDex\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\Arquivos Recentes\ISI\FootDex\FootDex\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\Arquivos Recentes\ISI\FootDex\FootDex\bin\Microsoft.AI.Web.dll
+D:\Arquivos Recentes\ISI\FootDex\FootDex\bin\Microsoft.AI.WindowsServer.dll
+D:\Arquivos Recentes\ISI\FootDex\FootDex\bin\Microsoft.ApplicationInsights.dll
+D:\Arquivos Recentes\ISI\FootDex\FootDex\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Arquivos Recentes\ISI\FootDex\FootDex\bin\Microsoft.Web.Infrastructure.dll
+D:\Arquivos Recentes\ISI\FootDex\FootDex\bin\System.Web.Helpers.dll
+D:\Arquivos Recentes\ISI\FootDex\FootDex\bin\System.Web.Mvc.dll
+D:\Arquivos Recentes\ISI\FootDex\FootDex\bin\System.Web.Razor.dll
+D:\Arquivos Recentes\ISI\FootDex\FootDex\bin\System.Web.Webpages.Deployment.dll
+D:\Arquivos Recentes\ISI\FootDex\FootDex\bin\System.Web.Webpages.dll
+D:\Arquivos Recentes\ISI\FootDex\FootDex\bin\System.Web.Webpages.Razor.dll
+D:\Arquivos Recentes\ISI\FootDex\FootDex\bin\Microsoft.AI.DependencyCollector.xml
+D:\Arquivos Recentes\ISI\FootDex\FootDex\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\Arquivos Recentes\ISI\FootDex\FootDex\bin\Microsoft.AI.Web.xml
+D:\Arquivos Recentes\ISI\FootDex\FootDex\bin\Microsoft.AI.WindowsServer.xml
+D:\Arquivos Recentes\ISI\FootDex\FootDex\bin\Microsoft.ApplicationInsights.xml
+D:\Arquivos Recentes\ISI\FootDex\FootDex\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Arquivos Recentes\ISI\FootDex\FootDex\bin\System.Web.Razor.xml
+D:\Arquivos Recentes\ISI\FootDex\FootDex\bin\System.Web.Webpages.xml
+D:\Arquivos Recentes\ISI\FootDex\FootDex\bin\System.Web.Webpages.Deployment.xml
+D:\Arquivos Recentes\ISI\FootDex\FootDex\bin\System.Web.Webpages.Razor.xml
+D:\Arquivos Recentes\ISI\FootDex\FootDex\bin\System.Web.Helpers.xml
+D:\Arquivos Recentes\ISI\FootDex\FootDex\bin\System.Web.Mvc.xml
+D:\Arquivos Recentes\ISI\FootDex\FootDex\obj\Debug\FootDex.dll
+D:\Arquivos Recentes\ISI\FootDex\FootDex\obj\Debug\FootDex.pdb
+C:\Users\Marcelo\Marcelo\UNIVEM\ISI - WEB 2017\FootDex\FootDex\obj\Debug\FootDex.csprojResolveAssemblyReference.cache
+C:\Users\Marcelo\Marcelo\UNIVEM\ISI - WEB 2017\FootDex\FootDex\obj\Debug\FootDex.dll
+C:\Users\Marcelo\Marcelo\UNIVEM\ISI - WEB 2017\FootDex\FootDex\obj\Debug\FootDex.pdb
+C:\Users\Marcelo\Desktop\FootDex\FootDex\bin\ApplicationInsights.config
+C:\Users\Marcelo\Desktop\FootDex\FootDex\bin\roslyn\csc.exe
+C:\Users\Marcelo\Desktop\FootDex\FootDex\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Marcelo\Desktop\FootDex\FootDex\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Marcelo\Desktop\FootDex\FootDex\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Marcelo\Desktop\FootDex\FootDex\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Marcelo\Desktop\FootDex\FootDex\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Marcelo\Desktop\FootDex\FootDex\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Marcelo\Desktop\FootDex\FootDex\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Marcelo\Desktop\FootDex\FootDex\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Marcelo\Desktop\FootDex\FootDex\bin\roslyn\vbc.exe
+C:\Users\Marcelo\Desktop\FootDex\FootDex\bin\roslyn\VBCSCompiler.exe
+C:\Users\Marcelo\Desktop\FootDex\FootDex\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Marcelo\Desktop\FootDex\FootDex\bin\FootDex.dll.config
+C:\Users\Marcelo\Desktop\FootDex\FootDex\bin\FootDex.dll
+C:\Users\Marcelo\Desktop\FootDex\FootDex\bin\FootDex.pdb
+C:\Users\Marcelo\Desktop\FootDex\FootDex\bin\EntityFramework.dll
+C:\Users\Marcelo\Desktop\FootDex\FootDex\bin\EntityFramework.SqlServer.dll
+C:\Users\Marcelo\Desktop\FootDex\FootDex\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Marcelo\Desktop\FootDex\FootDex\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Marcelo\Desktop\FootDex\FootDex\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Marcelo\Desktop\FootDex\FootDex\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Marcelo\Desktop\FootDex\FootDex\bin\Microsoft.AI.Web.dll
+C:\Users\Marcelo\Desktop\FootDex\FootDex\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Marcelo\Desktop\FootDex\FootDex\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Marcelo\Desktop\FootDex\FootDex\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Marcelo\Desktop\FootDex\FootDex\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Marcelo\Desktop\FootDex\FootDex\bin\System.Web.Helpers.dll
+C:\Users\Marcelo\Desktop\FootDex\FootDex\bin\System.Web.Mvc.dll
+C:\Users\Marcelo\Desktop\FootDex\FootDex\bin\System.Web.Razor.dll
+C:\Users\Marcelo\Desktop\FootDex\FootDex\bin\System.Web.Webpages.Deployment.dll
+C:\Users\Marcelo\Desktop\FootDex\FootDex\bin\System.Web.Webpages.dll
+C:\Users\Marcelo\Desktop\FootDex\FootDex\bin\System.Web.Webpages.Razor.dll
+C:\Users\Marcelo\Desktop\FootDex\FootDex\bin\EntityFramework.xml
+C:\Users\Marcelo\Desktop\FootDex\FootDex\bin\EntityFramework.SqlServer.xml
+C:\Users\Marcelo\Desktop\FootDex\FootDex\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Marcelo\Desktop\FootDex\FootDex\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Marcelo\Desktop\FootDex\FootDex\bin\Microsoft.AI.Web.xml
+C:\Users\Marcelo\Desktop\FootDex\FootDex\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Marcelo\Desktop\FootDex\FootDex\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Marcelo\Desktop\FootDex\FootDex\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Marcelo\Desktop\FootDex\FootDex\bin\System.Web.Razor.xml
+C:\Users\Marcelo\Desktop\FootDex\FootDex\bin\System.Web.Webpages.xml
+C:\Users\Marcelo\Desktop\FootDex\FootDex\bin\System.Web.Webpages.Deployment.xml
+C:\Users\Marcelo\Desktop\FootDex\FootDex\bin\System.Web.Webpages.Razor.xml
+C:\Users\Marcelo\Desktop\FootDex\FootDex\bin\System.Web.Helpers.xml
+C:\Users\Marcelo\Desktop\FootDex\FootDex\bin\System.Web.Mvc.xml
+C:\Users\Marcelo\Desktop\FootDex\FootDex\obj\Debug\FootDex.csprojResolveAssemblyReference.cache
+C:\Users\Marcelo\Desktop\FootDex\FootDex\obj\Debug\FootDex.dll
+C:\Users\Marcelo\Desktop\FootDex\FootDex\obj\Debug\FootDex.pdb
+C:\Users\Marcelo\Desktop\FootDex\FootDex\obj\Debug\FootDex.Migrations.Jogador.resources
+C:\Users\Marcelo\Desktop\FootDex\FootDex\obj\Debug\FootDex.csproj.GenerateResource.Cache
+C:\Users\Marcelo\Desktop\FootDex\FootDex\obj\Debug\FootDex.Migrations.Jogador_Atributo.resources
+C:\Users\Pedro\Documents\Visual Studio 2013\Projects\FootDex\FootDex\bin\ApplicationInsights.config
+C:\Users\Pedro\Documents\Visual Studio 2013\Projects\FootDex\FootDex\bin\roslyn\csc.exe
+C:\Users\Pedro\Documents\Visual Studio 2013\Projects\FootDex\FootDex\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Pedro\Documents\Visual Studio 2013\Projects\FootDex\FootDex\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Pedro\Documents\Visual Studio 2013\Projects\FootDex\FootDex\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Pedro\Documents\Visual Studio 2013\Projects\FootDex\FootDex\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Pedro\Documents\Visual Studio 2013\Projects\FootDex\FootDex\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Pedro\Documents\Visual Studio 2013\Projects\FootDex\FootDex\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Pedro\Documents\Visual Studio 2013\Projects\FootDex\FootDex\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Pedro\Documents\Visual Studio 2013\Projects\FootDex\FootDex\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Pedro\Documents\Visual Studio 2013\Projects\FootDex\FootDex\bin\roslyn\vbc.exe
+C:\Users\Pedro\Documents\Visual Studio 2013\Projects\FootDex\FootDex\bin\roslyn\VBCSCompiler.exe
+C:\Users\Pedro\Documents\Visual Studio 2013\Projects\FootDex\FootDex\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Pedro\Documents\Visual Studio 2013\Projects\FootDex\FootDex\bin\FootDex.dll.config
+C:\Users\Pedro\Documents\Visual Studio 2013\Projects\FootDex\FootDex\bin\FootDex.dll
+C:\Users\Pedro\Documents\Visual Studio 2013\Projects\FootDex\FootDex\bin\FootDex.pdb
+C:\Users\Pedro\Documents\Visual Studio 2013\Projects\FootDex\FootDex\bin\EntityFramework.dll
+C:\Users\Pedro\Documents\Visual Studio 2013\Projects\FootDex\FootDex\bin\EntityFramework.SqlServer.dll
+C:\Users\Pedro\Documents\Visual Studio 2013\Projects\FootDex\FootDex\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Pedro\Documents\Visual Studio 2013\Projects\FootDex\FootDex\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Pedro\Documents\Visual Studio 2013\Projects\FootDex\FootDex\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Pedro\Documents\Visual Studio 2013\Projects\FootDex\FootDex\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Pedro\Documents\Visual Studio 2013\Projects\FootDex\FootDex\bin\Microsoft.AI.Web.dll
+C:\Users\Pedro\Documents\Visual Studio 2013\Projects\FootDex\FootDex\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Pedro\Documents\Visual Studio 2013\Projects\FootDex\FootDex\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Pedro\Documents\Visual Studio 2013\Projects\FootDex\FootDex\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Pedro\Documents\Visual Studio 2013\Projects\FootDex\FootDex\bin\System.Web.Helpers.dll
+C:\Users\Pedro\Documents\Visual Studio 2013\Projects\FootDex\FootDex\bin\System.Web.Mvc.dll
+C:\Users\Pedro\Documents\Visual Studio 2013\Projects\FootDex\FootDex\bin\System.Web.Razor.dll
+C:\Users\Pedro\Documents\Visual Studio 2013\Projects\FootDex\FootDex\bin\System.Web.Webpages.Deployment.dll
+C:\Users\Pedro\Documents\Visual Studio 2013\Projects\FootDex\FootDex\bin\System.Web.Webpages.dll
+C:\Users\Pedro\Documents\Visual Studio 2013\Projects\FootDex\FootDex\bin\System.Web.Webpages.Razor.dll
+C:\Users\Pedro\Documents\Visual Studio 2013\Projects\FootDex\FootDex\bin\EntityFramework.xml
+C:\Users\Pedro\Documents\Visual Studio 2013\Projects\FootDex\FootDex\bin\EntityFramework.SqlServer.xml
+C:\Users\Pedro\Documents\Visual Studio 2013\Projects\FootDex\FootDex\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Pedro\Documents\Visual Studio 2013\Projects\FootDex\FootDex\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Pedro\Documents\Visual Studio 2013\Projects\FootDex\FootDex\bin\Microsoft.AI.Web.xml
+C:\Users\Pedro\Documents\Visual Studio 2013\Projects\FootDex\FootDex\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Pedro\Documents\Visual Studio 2013\Projects\FootDex\FootDex\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Pedro\Documents\Visual Studio 2013\Projects\FootDex\FootDex\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Pedro\Documents\Visual Studio 2013\Projects\FootDex\FootDex\bin\System.Web.Razor.xml
+C:\Users\Pedro\Documents\Visual Studio 2013\Projects\FootDex\FootDex\bin\System.Web.Webpages.xml
+C:\Users\Pedro\Documents\Visual Studio 2013\Projects\FootDex\FootDex\bin\System.Web.Webpages.Deployment.xml
+C:\Users\Pedro\Documents\Visual Studio 2013\Projects\FootDex\FootDex\bin\System.Web.Webpages.Razor.xml
+C:\Users\Pedro\Documents\Visual Studio 2013\Projects\FootDex\FootDex\bin\System.Web.Helpers.xml
+C:\Users\Pedro\Documents\Visual Studio 2013\Projects\FootDex\FootDex\bin\System.Web.Mvc.xml
+C:\Users\Pedro\Documents\Visual Studio 2013\Projects\FootDex\FootDex\obj\Debug\FootDex.csprojResolveAssemblyReference.cache
+C:\Users\Pedro\Documents\Visual Studio 2013\Projects\FootDex\FootDex\obj\Debug\FootDex.dll
+C:\Users\Pedro\Documents\Visual Studio 2013\Projects\FootDex\FootDex\obj\Debug\FootDex.pdb
+C:\Users\Pedro\Documents\Visual Studio 2013\Projects\FootDex\FootDex\obj\Debug\FootDex.Migrations.InitialBase.resources
+C:\Users\Pedro\Documents\Visual Studio 2013\Projects\FootDex\FootDex\obj\Debug\FootDex.csproj.GenerateResource.Cache
