@@ -39,7 +39,7 @@ namespace FootDex.Controllers
         // GET: Posicaos/Create
         public ActionResult Create()
         {
-            ViewBag.SetorId = new SelectList(db.Setor, "SetorId", "descricao");
+            ViewBag.SetorID = new SelectList(db.Setor, "ID", "Descricao");
             return View();
         }
 
@@ -48,7 +48,7 @@ namespace FootDex.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "PosicaoId,descricao,SetorId")] Posicao posicao)
+        public ActionResult Create([Bind(Include = "ID,Descricao,SetorID")] Posicao posicao)
         {
             if (ModelState.IsValid)
             {
@@ -57,7 +57,7 @@ namespace FootDex.Controllers
                 return RedirectToAction("Index");
             }
 
-            ViewBag.SetorId = new SelectList(db.Setor, "SetorId", "descricao", posicao.SetorId);
+            ViewBag.SetorID = new SelectList(db.Setor, "ID", "Descricao", posicao.SetorID);
             return View(posicao);
         }
 
@@ -73,7 +73,7 @@ namespace FootDex.Controllers
             {
                 return HttpNotFound();
             }
-            ViewBag.SetorId = new SelectList(db.Setor, "SetorId", "descricao", posicao.SetorId);
+            ViewBag.SetorID = new SelectList(db.Setor, "ID", "Descricao", posicao.SetorID);
             return View(posicao);
         }
 
@@ -82,7 +82,7 @@ namespace FootDex.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "PosicaoId,descricao,SetorId")] Posicao posicao)
+        public ActionResult Edit([Bind(Include = "ID,Descricao,SetorID")] Posicao posicao)
         {
             if (ModelState.IsValid)
             {
@@ -90,7 +90,7 @@ namespace FootDex.Controllers
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
-            ViewBag.SetorId = new SelectList(db.Setor, "SetorId", "descricao", posicao.SetorId);
+            ViewBag.SetorID = new SelectList(db.Setor, "ID", "Descricao", posicao.SetorID);
             return View(posicao);
         }
 

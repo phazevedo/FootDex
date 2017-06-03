@@ -163,7 +163,6 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\JogadorsController.cs" />
-    <Compile Include="Controllers\LigasController.cs" />
     <Compile Include="Controllers\PosicaosController.cs" />
     <Compile Include="Controllers\SetorsController.cs" />
     <Compile Include="Controllers\TecnicoesController.cs" />
@@ -171,16 +170,17 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201705271920244_InitialBase.cs" />
-    <Compile Include="Migrations\201705271920244_InitialBase.Designer.cs">
-      <DependentUpon>201705271920244_InitialBase.cs</DependentUpon>
+    <Compile Include="Migrations\201706030120486_InitialMigration.cs" />
+    <Compile Include="Migrations\201706030120486_InitialMigration.Designer.cs">
+      <DependentUpon>201706030120486_InitialMigration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201706030126444_RemovePesosSetor.cs" />
+    <Compile Include="Migrations\201706030126444_RemovePesosSetor.Designer.cs">
+      <DependentUpon>201706030126444_RemovePesosSetor.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
-    <Compile Include="Models\Atributo.cs" />
-    <Compile Include="Models\JogadorAtributo.cs" />
     <Compile Include="Models\ContextoBanco.cs" />
     <Compile Include="Models\Jogador.cs" />
-    <Compile Include="Models\Liga.cs" />
     <Compile Include="Models\Posicao.cs" />
     <Compile Include="Models\Setor.cs" />
     <Compile Include="Models\Tecnico.cs" />
@@ -195,39 +195,34 @@
     </Content>
     <Content Include="scripts\jquery-3.1.1.slim.min.map" />
     <Content Include="scripts\jquery-3.1.1.min.map" />
-    <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Jogadors\Create.cshtml" />
     <Content Include="Views\Jogadors\Delete.cshtml" />
     <Content Include="Views\Jogadors\Details.cshtml" />
     <Content Include="Views\Jogadors\Edit.cshtml" />
     <Content Include="Views\Jogadors\Index.cshtml" />
-    <Content Include="Views\Times\Create.cshtml" />
-    <Content Include="Views\Times\Delete.cshtml" />
-    <Content Include="Views\Times\Details.cshtml" />
-    <Content Include="Views\Times\Edit.cshtml" />
-    <Content Include="Views\Times\Index.cshtml" />
     <Content Include="Views\Posicaos\Create.cshtml" />
     <Content Include="Views\Posicaos\Delete.cshtml" />
     <Content Include="Views\Posicaos\Details.cshtml" />
     <Content Include="Views\Posicaos\Edit.cshtml" />
     <Content Include="Views\Posicaos\Index.cshtml" />
-    <Content Include="Views\Tecnicoes\Create.cshtml" />
-    <Content Include="Views\Tecnicoes\Delete.cshtml" />
-    <Content Include="Views\Tecnicoes\Details.cshtml" />
-    <Content Include="Views\Tecnicoes\Edit.cshtml" />
-    <Content Include="Views\Tecnicoes\Index.cshtml" />
-    <Content Include="Views\Ligas\Create.cshtml" />
-    <Content Include="Views\Ligas\Delete.cshtml" />
-    <Content Include="Views\Ligas\Details.cshtml" />
-    <Content Include="Views\Ligas\Edit.cshtml" />
-    <Content Include="Views\Ligas\Index.cshtml" />
     <Content Include="Views\Setors\Create.cshtml" />
     <Content Include="Views\Setors\Delete.cshtml" />
     <Content Include="Views\Setors\Details.cshtml" />
     <Content Include="Views\Setors\Edit.cshtml" />
     <Content Include="Views\Setors\Index.cshtml" />
+    <Content Include="Views\Tecnicoes\Create.cshtml" />
+    <Content Include="Views\Tecnicoes\Delete.cshtml" />
+    <Content Include="Views\Tecnicoes\Details.cshtml" />
+    <Content Include="Views\Tecnicoes\Edit.cshtml" />
+    <Content Include="Views\Tecnicoes\Index.cshtml" />
+    <Content Include="Views\Times\Create.cshtml" />
+    <Content Include="Views\Times\Delete.cshtml" />
+    <Content Include="Views\Times\Details.cshtml" />
+    <Content Include="Views\Times\Edit.cshtml" />
+    <Content Include="Views\Times\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -239,8 +234,11 @@
     <Folder Include="App_Data\" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201705271920244_InitialBase.resx">
-      <DependentUpon>201705271920244_InitialBase.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201706030120486_InitialMigration.resx">
+      <DependentUpon>201706030120486_InitialMigration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201706030126444_RemovePesosSetor.resx">
+      <DependentUpon>201706030126444_RemovePesosSetor.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

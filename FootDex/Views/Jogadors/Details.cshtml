@@ -2,7 +2,6 @@
 
 @{
     ViewBag.Title = "Details";
-    Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
 <h2>Details</h2>
@@ -12,40 +11,144 @@
     <hr />
     <dl class="dl-horizontal">
         <dt>
-            @Html.DisplayNameFor(model => model.Posicao.descricao)
+            @Html.DisplayNameFor(model => model.Posicao.Descricao)
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.Posicao.descricao)
+            @Html.DisplayFor(model => model.Posicao.Descricao)
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.Time.nome)
+            @Html.DisplayNameFor(model => model.Time.Nome)
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.Time.nome)
+            @Html.DisplayFor(model => model.Time.Nome)
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.nome)
+            @Html.DisplayNameFor(model => model.Nome)
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.nome)
+            @Html.DisplayFor(model => model.Nome)
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.data_nascimento)
+            @Html.DisplayNameFor(model => model.DataNascimento)
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.data_nascimento)
+            @Html.DisplayFor(model => model.DataNascimento)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Media)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Media)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.HabilidadeGoleiro)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HabilidadeGoleiro)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Forca)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Forca)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Marcacao)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Marcacao)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Carrinho)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Carrinho)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PasseCurto)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PasseCurto)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PasseLongo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PasseLongo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Cruzamento)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Cruzamento)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.VisaoDeJogo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.VisaoDeJogo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Finalizacao)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Finalizacao)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Cabeceio)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Cabeceio)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Dibre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Dibre)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Velocidade)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Velocidade)
         </dd>
 
     </dl>
 </div>
 <p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.JogadorId }) |
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
     @Html.ActionLink("Back to List", "Index")
 </p>

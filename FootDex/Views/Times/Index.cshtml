@@ -2,7 +2,6 @@
 
 @{
     ViewBag.Title = "Index";
-    Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
 <h2>Index</h2>
@@ -13,13 +12,10 @@
 <table class="table">
     <tr>
         <th>
-            @Html.DisplayNameFor(model => model.Liga.descricao)
+            @Html.DisplayNameFor(model => model.Tecnico.Nome)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.Tecnico.nome)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.nome)
+            @Html.DisplayNameFor(model => model.Nome)
         </th>
         <th></th>
     </tr>
@@ -27,18 +23,15 @@
 @foreach (var item in Model) {
     <tr>
         <td>
-            @Html.DisplayFor(modelItem => item.Liga.descricao)
+            @Html.DisplayFor(modelItem => item.Tecnico.Nome)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.Tecnico.nome)
+            @Html.DisplayFor(modelItem => item.Nome)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.nome)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.TimeId }) |
-            @Html.ActionLink("Details", "Details", new { id=item.TimeId }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.TimeId })
+            @Html.ActionLink("Edit", "Edit", new { id=item.ID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.ID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ID })
         </td>
     </tr>
 }

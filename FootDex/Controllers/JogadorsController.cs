@@ -39,8 +39,8 @@ namespace FootDex.Controllers
         // GET: Jogadors/Create
         public ActionResult Create()
         {
-            ViewBag.PosicaoId = new SelectList(db.Posicao, "PosicaoId", "descricao");
-            ViewBag.TimeId = new SelectList(db.Time, "TimeId", "nome");
+            ViewBag.PosicaoID = new SelectList(db.Posicao, "ID", "Descricao");
+            ViewBag.TimeID = new SelectList(db.Time, "ID", "Nome");
             return View();
         }
 
@@ -49,17 +49,18 @@ namespace FootDex.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "JogadorId,nome,data_nascimento,PosicaoId,TimeId")] Jogador jogador)
+        public ActionResult Create([Bind(Include = "ID,Nome,DataNascimento,PosicaoID,Media,TimeID,HabilidadeGoleiro,Forca,Marcacao,Carrinho,PasseCurto,PasseLongo,Cruzamento,VisaoDeJogo,Finalizacao,Cabeceio,Dibre,Velocidade")] Jogador jogador)
         {
             if (ModelState.IsValid)
             {
+                jogador.Media = CalculaMedia(jogador);
                 db.Jogador.Add(jogador);
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
 
-            ViewBag.PosicaoId = new SelectList(db.Posicao, "PosicaoId", "descricao", jogador.PosicaoId);
-            ViewBag.TimeId = new SelectList(db.Time, "TimeId", "nome", jogador.TimeId);
+            ViewBag.PosicaoID = new SelectList(db.Posicao, "ID", "Descricao", jogador.PosicaoID);
+            ViewBag.TimeID = new SelectList(db.Time, "ID", "Nome", jogador.TimeID);
             return View(jogador);
         }
 
@@ -75,8 +76,8 @@ namespace FootDex.Controllers
             {
                 return HttpNotFound();
             }
-            ViewBag.PosicaoId = new SelectList(db.Posicao, "PosicaoId", "descricao", jogador.PosicaoId);
-            ViewBag.TimeId = new SelectList(db.Time, "TimeId", "nome", jogador.TimeId);
+            ViewBag.PosicaoID = new SelectList(db.Posicao, "ID", "Descricao", jogador.PosicaoID);
+            ViewBag.TimeID = new SelectList(db.Time, "ID", "Nome", jogador.TimeID);
             return View(jogador);
         }
 
@@ -85,16 +86,17 @@ namespace FootDex.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "JogadorId,nome,data_nascimento,PosicaoId,TimeId")] Jogador jogador)
+        public ActionResult Edit([Bind(Include = "ID,Nome,DataNascimento,PosicaoID,Media,TimeID,HabilidadeGoleiro,Forca,Marcacao,Carrinho,PasseCurto,PasseLongo,Cruzamento,VisaoDeJogo,Finalizacao,Cabeceio,Dibre,Velocidade")] Jogador jogador)
         {
             if (ModelState.IsValid)
             {
+                jogador.Media = CalculaMedia(jogador);
                 db.Entry(jogador).State = EntityState.Modified;
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
-            ViewBag.PosicaoId = new SelectList(db.Posicao, "PosicaoId", "descricao", jogador.PosicaoId);
-            ViewBag.TimeId = new SelectList(db.Time, "TimeId", "nome", jogador.TimeId);
+            ViewBag.PosicaoID = new SelectList(db.Posicao, "ID", "Descricao", jogador.PosicaoID);
+            ViewBag.TimeID = new SelectList(db.Time, "ID", "Nome", jogador.TimeID);
             return View(jogador);
         }
 
@@ -122,6 +124,15 @@ namespace FootDex.Controllers
             db.Jogador.Remove(jogador);
             db.SaveChanges();
             return RedirectToAction("Index");
+        }
+
+        public decimal CalculaMedia(Jogador jogador)
+        {
+            decimal Media = 0;
+            Media = (jogador.Cabeceio + jogador.Carrinho + jogador.Cruzamento + jogador.Dibre + jogador.Finalizacao + jogador.Forca + jogador.HabilidadeGoleiro +
+                jogador.Marcacao + jogador.PasseCurto + jogador.PasseLongo + jogador.Velocidade + jogador.VisaoDeJogo);
+            Media = Media / 12;
+            return Math.Round(Media);
         }
 
         protected override void Dispose(bool disposing)

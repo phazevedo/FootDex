@@ -17,7 +17,7 @@ namespace FootDex.Controllers
         // GET: Times
         public ActionResult Index()
         {
-            var time = db.Time.Include(t => t.Liga).Include(t => t.Tecnico);
+            var time = db.Time.Include(t => t.Tecnico);
             return View(time.ToList());
         }
 
@@ -39,8 +39,7 @@ namespace FootDex.Controllers
         // GET: Times/Create
         public ActionResult Create()
         {
-            ViewBag.LigaID = new SelectList(db.Liga, "LigaId", "descricao");
-            ViewBag.TecnicoID = new SelectList(db.Tecnico, "TecnicoId", "nome");
+            ViewBag.TecnicoID = new SelectList(db.Tecnico, "ID", "Nome");
             return View();
         }
 
@@ -49,7 +48,7 @@ namespace FootDex.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "TimeId,nome,TecnicoID,LigaID")] Time time)
+        public ActionResult Create([Bind(Include = "ID,Nome,TecnicoID")] Time time)
         {
             if (ModelState.IsValid)
             {
@@ -58,8 +57,7 @@ namespace FootDex.Controllers
                 return RedirectToAction("Index");
             }
 
-            ViewBag.LigaID = new SelectList(db.Liga, "LigaId", "descricao", time.LigaID);
-            ViewBag.TecnicoID = new SelectList(db.Tecnico, "TecnicoId", "nome", time.TecnicoID);
+            ViewBag.TecnicoID = new SelectList(db.Tecnico, "ID", "Nome", time.TecnicoID);
             return View(time);
         }
 
@@ -75,8 +73,7 @@ namespace FootDex.Controllers
             {
                 return HttpNotFound();
             }
-            ViewBag.LigaID = new SelectList(db.Liga, "LigaId", "descricao", time.LigaID);
-            ViewBag.TecnicoID = new SelectList(db.Tecnico, "TecnicoId", "nome", time.TecnicoID);
+            ViewBag.TecnicoID = new SelectList(db.Tecnico, "ID", "Nome", time.TecnicoID);
             return View(time);
         }
 
@@ -85,7 +82,7 @@ namespace FootDex.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "TimeId,nome,TecnicoID,LigaID")] Time time)
+        public ActionResult Edit([Bind(Include = "ID,Nome,TecnicoID")] Time time)
         {
             if (ModelState.IsValid)
             {
@@ -93,8 +90,7 @@ namespace FootDex.Controllers
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
-            ViewBag.LigaID = new SelectList(db.Liga, "LigaId", "descricao", time.LigaID);
-            ViewBag.TecnicoID = new SelectList(db.Tecnico, "TecnicoId", "nome", time.TecnicoID);
+            ViewBag.TecnicoID = new SelectList(db.Tecnico, "ID", "Nome", time.TecnicoID);
             return View(time);
         }
 
@@ -122,6 +118,20 @@ namespace FootDex.Controllers
             db.Time.Remove(time);
             db.SaveChanges();
             return RedirectToAction("Index");
+        }
+
+        public decimal CalculaMediaSetor(List<Jogador> jogadores)
+        {
+            decimal Media = 0;
+            int contador = 0;
+            foreach(Jogador Jogador in jogadores)
+            {
+                Media += Jogador.Media;
+                contador++;
+            }
+
+            Media = Media / contador;
+            return Math.Round(Media);
         }
 
         protected override void Dispose(bool disposing)

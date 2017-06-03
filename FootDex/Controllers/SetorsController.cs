@@ -46,7 +46,7 @@ namespace FootDex.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "SetorId,descricao,peso_ataque,peso_meio_campo,peso_defesa")] Setor setor)
+        public ActionResult Create([Bind(Include = "ID,Descricao")] Setor setor)
         {
             if (ModelState.IsValid)
             {
@@ -78,7 +78,7 @@ namespace FootDex.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "SetorId,descricao,peso_ataque,peso_meio_campo,peso_defesa")] Setor setor)
+        public ActionResult Edit([Bind(Include = "ID,Descricao")] Setor setor)
         {
             if (ModelState.IsValid)
             {

@@ -18,18 +18,11 @@
                     <span class="icon-bar"></span>
                 </button>
                 @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
-                <ul class="list-inline">
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
                     <li>
                         @Html.ActionLink("Jogadores", "Index", "Jogadors", new { area = "" }, new { @class = "" })
-                    </li>
-                    <li>
-                        @Html.ActionLink("Times", "Index", "Times", new { area = "" }, new { @class = "" })
-                    </li>
-                    <li>
-                        @Html.ActionLink("Ligas", "Index", "Ligas", new { area = "" }, new { @class = "" })
-                    </li>
-                    <li>
-                        @Html.ActionLink("Técnicos", "Index", "Tecnicoes", new { area = "" }, new { @class = "" })
                     </li>
                     <li>
                         @Html.ActionLink("Posições", "Index", "Posicaos", new { area = "" }, new { @class = "" })
@@ -37,10 +30,12 @@
                     <li>
                         @Html.ActionLink("Setores", "Index", "Setors", new { area = "" }, new { @class = "" })
                     </li>
-                </ul>
-            </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
+                    <li>
+                        @Html.ActionLink("Técnicos", "Index", "Tecnicoes", new { area = "" }, new { @class = "" })
+                    </li>
+                    <li>
+                        @Html.ActionLink("Times", "Index", "Times", new { area = "" }, new { @class = "" })
+                    </li>
                 </ul>
             </div>
         </div>
