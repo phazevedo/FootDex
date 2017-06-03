@@ -1,34 +1,41 @@
-﻿@model FootDex.Models.Time
+﻿@using FootDex.Models
 
 @{
-    ViewBag.Title = "Details";
+    ViewBag.Title = "Informações do time";
 }
 
 <h2>Details</h2>
+
+@{
+    var time = (Time)ViewData["Time"];
+    var atq = ViewData["MediaATQ"];
+    var mei = ViewData["MediaMEI"];
+    var def = ViewData["MediaDEF"];
+}
 
 <div>
     <h4>Time</h4>
     <hr />
     <dl class="dl-horizontal">
         <dt>
-            @Html.DisplayNameFor(model => model.Tecnico.Nome)
+            Nome do Técnico:
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.Tecnico.Nome)
+            @Html.DisplayFor(model => @time.Tecnico.Nome)
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.Nome)
+            Nome do Time:
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.Nome)
+            @Html.DisplayFor(model => @time.Nome)
         </dd>
 
     </dl>
 </div>
 <p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Edit", "Edit", new { id = @time.ID }) |
     @Html.ActionLink("Back to List", "Index")
 </p>

@@ -33,7 +33,13 @@ namespace FootDex.Controllers
             {
                 return HttpNotFound();
             }
-            return View(time);
+
+            ViewData["Time"] = time;
+            ViewData["MediaATQ"] = time.mediaATQ();
+            ViewData["MediaMEI"] = time.mediaMEI();
+            ViewData["MediaDEF"] = time.mediaDEF();
+
+            return View();
         }
 
         // GET: Times/Create

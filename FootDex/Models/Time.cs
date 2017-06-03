@@ -20,5 +20,9 @@ namespace FootDex.Models
         public virtual Tecnico Tecnico { get; set; }
 
         //public virtual ICollection<Jogador> Jogadors { get; set; }
+
+        public double mediaATQ() { return 1; }
+        public double mediaMEI() { return 1; }
+        public double mediaDEF() { return 1; }
     }
 }
