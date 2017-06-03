@@ -9,6 +9,7 @@ namespace FootDex.Models
 {
     public class Posicao
     {
+        public enum Setor_teste { ATQ = 1, MEI, DEF}
         public int ID { get; set; }
         [Required]
         [DisplayName("Descrição")]

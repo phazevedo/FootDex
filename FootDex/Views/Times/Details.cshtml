@@ -8,9 +8,9 @@
 
 @{
     var time = (Time)ViewData["Time"];
-    var atq = ViewData["MediaATQ"];
-    var mei = ViewData["MediaMEI"];
-    var def = ViewData["MediaDEF"];
+    var atq = (double)ViewData["MediaATQ"];
+    var mei = (double)ViewData["MediaMEI"];
+    var def = (double)ViewData["MediaDEF"];
 }
 
 <div>
@@ -32,6 +32,29 @@
         <dd>
             @Html.DisplayFor(model => @time.Nome)
         </dd>
+        <dt>
+            Media ataque:
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => @atq)
+        </dd>
+        <dt>
+            Media mei:
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => @mei)
+        </dd>
+        <dt>
+            Media def:
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => @def)
+        </dd>
+
+
 
     </dl>
 </div>

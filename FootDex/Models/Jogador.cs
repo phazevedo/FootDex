@@ -69,5 +69,20 @@ namespace FootDex.Models
         [Required]
         [DisplayName("Velocidade")]
         public int Velocidade { get; set; }
+
+        public double mediaATQ() 
+        {
+            return (Finalizacao + Cabeceio + Dibre + Velocidade)/4;
+        }
+
+        public double mediaMEI()
+        {
+            return (VisaoDeJogo + PasseLongo + PasseLongo + Cruzamento)/4;
+        }
+
+        public double mediaDEF()
+        {
+            return (Forca + HabilidadeGoleiro + Marcacao + Carrinho)/4;
+        }
     }
 }
