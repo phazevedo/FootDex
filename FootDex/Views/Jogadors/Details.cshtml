@@ -4,150 +4,90 @@
     ViewBag.Title = "Details";
 }
 
-<h2>Details</h2>
+<h2>Jogador</h2>
 
-<div>
-    <h4>Jogador</h4>
-    <hr />
-    <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.Posicao.Descricao)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Posicao.Descricao)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Time.Nome)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Time.Nome)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Nome)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Nome)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.DataNascimento)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.DataNascimento)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Media)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Media)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.HabilidadeGoleiro)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.HabilidadeGoleiro)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Forca)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Forca)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Marcacao)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Marcacao)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Carrinho)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Carrinho)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.PasseCurto)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.PasseCurto)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.PasseLongo)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.PasseLongo)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Cruzamento)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Cruzamento)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.VisaoDeJogo)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.VisaoDeJogo)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Finalizacao)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Finalizacao)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Cabeceio)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Cabeceio)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Dibre)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Dibre)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Velocidade)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Velocidade)
-        </dd>
-
-    </dl>
+<div class="row header-jogador">
+    <div class="col-lg-3">
+        <i class="fa fa-user" aria-hidden="true" style="font-size: 120px;"></i>
+    </div>
+    <div class="col-lg-7">
+        <ul class="dados-geral">
+            <li>@Html.DisplayFor(model => model.Nome)</li>
+            <li>@Html.DisplayFor(model => model.DataNascimento)</li>
+            <li>@Html.DisplayFor(model => model.Posicao.Descricao)</li>
+            <li>@Html.DisplayFor(model => model.Time.Nome)</li>
+        </ul>
+    </div>
+    <div class="col-lg-2">
+        <div class="media-jogador">@Html.DisplayFor(model => model.Media)</div>
+    </div>
 </div>
+<div class="row">
+    <div class="col-lg-4">
+        <ul class="list-group">
+            <li class="list-group-item list-group-item-heading">Defesa</li>
+            <li class="list-group-item">
+                <div class="valor-atributo">@Html.DisplayFor(model => model.HabilidadeGoleiro)</div>
+                @Html.DisplayNameFor(model => model.HabilidadeGoleiro)
+            </li>
+            <li class="list-group-item">
+                <div class="valor-atributo">@Html.DisplayFor(model => model.Forca)</div>
+                @Html.DisplayNameFor(model => model.Forca)
+            </li>
+            <li class="list-group-item">
+                <div class="valor-atributo">@Html.DisplayFor(model => model.Marcacao)</div>
+                @Html.DisplayNameFor(model => model.Marcacao)
+            </li>
+            <li class="list-group-item">
+                <div class="valor-atributo">@Html.DisplayFor(model => model.Carrinho)</div>
+                @Html.DisplayNameFor(model => model.Carrinho)
+            </li>
+        </ul>
+    </div>
+    <div class="col-lg-4">
+        <ul class="list-group">
+            <li class="list-group-item list-group-item-heading">Meio Campo</li>
+            <li class="list-group-item">
+                <div class="valor-atributo">@Html.DisplayFor(model => model.PasseCurto)</div>
+                @Html.DisplayNameFor(model => model.PasseCurto)
+            </li>
+            <li class="list-group-item">
+                <div class="valor-atributo">@Html.DisplayFor(model => model.PasseLongo)</div>
+                @Html.DisplayNameFor(model => model.PasseLongo)
+            </li>
+            <li class="list-group-item">
+                <div class="valor-atributo">@Html.DisplayFor(model => model.Cruzamento)</div>
+                @Html.DisplayNameFor(model => model.Cruzamento)
+            </li>
+            <li class="list-group-item">
+                <div class="valor-atributo">@Html.DisplayFor(model => model.VisaoDeJogo)</div>
+                @Html.DisplayNameFor(model => model.VisaoDeJogo)
+            </li>
+        </ul>
+    </div>
+    <div class="col-lg-4">
+        <ul class="list-group">
+            <li class="list-group-item list-group-item-heading">Ataque</li>
+            <li class="list-group-item">
+                <div class="valor-atributo">@Html.DisplayFor(model => model.Finalizacao)</div>
+                @Html.DisplayNameFor(model => model.Finalizacao)
+            </li>
+            <li class="list-group-item">
+                <div class="valor-atributo">@Html.DisplayFor(model => model.Cabeceio)</div>
+                @Html.DisplayNameFor(model => model.Cabeceio)
+            </li>
+            <li class="list-group-item">
+                <div class="valor-atributo">@Html.DisplayFor(model => model.Dibre)</div>
+                @Html.DisplayNameFor(model => model.Dibre)
+            </li>
+            <li class="list-group-item">
+                <div class="valor-atributo">@Html.DisplayFor(model => model.Velocidade)</div>
+                @Html.DisplayNameFor(model => model.Velocidade)
+            </li>
+        </ul>
+    </div>
+</div>
+
 <p>
     @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
     @Html.ActionLink("Back to List", "Index")

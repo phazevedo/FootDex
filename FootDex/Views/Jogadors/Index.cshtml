@@ -28,6 +28,9 @@
         <th>
             @Html.DisplayNameFor(model => model.Media)
         </th>
+        <th>
+            <p>Ações</p>
+        </th>
     </tr>
 
 @foreach (var item in Model) {
@@ -48,9 +51,23 @@
             @Html.DisplayFor(modelItem => item.Media)
         </td>
         <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.ID }) |
-            @Html.ActionLink("Details", "Details", new { id=item.ID }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.ID })
+            <ul class="menu-editar">
+                <li>
+                    <a href="@Url.Action("Edit", new { id=item.ID})">
+                        <i class="fa fa-pencil" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="@Url.Action("Details", new { id=item.ID})">
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="@Url.Action("Delete", new { id=item.ID})">
+                        <i class="fa fa-trash-o" aria-hidden="true"></i>
+                    </a>
+                </li>
+            </ul>
         </td>
     </tr>
 }

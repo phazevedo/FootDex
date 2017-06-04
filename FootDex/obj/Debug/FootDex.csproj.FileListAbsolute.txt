@@ -331,3 +331,10 @@ C:\Users\Pedro\Documents\Visual Studio 2013\Projects\TestesFootDex\Footdex\FootD
 C:\Users\Pedro\Documents\Visual Studio 2013\Projects\TestesFootDex\Footdex\FootDex\obj\Debug\FootDex.Migrations.RemoveSetor.resources
 C:\Users\Pedro\Documents\Visual Studio 2013\Projects\TestesFootDex\Footdex\FootDex\obj\Debug\FootDex.Migrations.PosicaoFixa.resources
 C:\Users\Pedro\Documents\Visual Studio 2013\Projects\TestesFootDex\Footdex\FootDex\obj\Debug\FootDex.Migrations.Camposnull.resources
+C:\Users\Claudio\Desktop\FootDex\FootDex\bin\EnumHelper.dll
+C:\Users\Claudio\Desktop\FootDex\FootDex\bin\EnumUtils.dll
+C:\Users\Claudio\Desktop\FootDex\FootDex\bin\EnumUtils.pdb
+C:\Users\Claudio\Desktop\FootDex\FootDex\bin\EnumUtils.xml
+C:\Users\Claudio\Desktop\FootDex\FootDex\obj\Debug\FootDex.Migrations.RemoveSetor.resources
+C:\Users\Claudio\Desktop\FootDex\FootDex\obj\Debug\FootDex.Migrations.PosicaoFixa.resources
+C:\Users\Claudio\Desktop\FootDex\FootDex\obj\Debug\FootDex.Migrations.Camposnull.resources

@@ -1,5 +1,5 @@
 ﻿/*----------DEFAULT----------*/
-a, a:hover, a:visited> a:active{
+a, a:hover, a:visited, a:active{
     text-decoration: none;
 }
 /*----------CABEÇALHO----------*/
@@ -34,7 +34,7 @@ button{
 
 /*----------JOGADOR----------*/
 .adicionar{
-    background: red;
+    background: #59b960;
     float: right;
     width: 50px;
     height: 50px;
@@ -42,7 +42,7 @@ button{
     border: none;
     margin-bottom: 20px;
 }
-.adicionar a, .adicionar a i:hover{
+.adicionar a, .adicionar a:hover, .adicionar a::after{
     color: #fff;
     font-size: 22px;
 }
@@ -59,6 +59,7 @@ button{
     font-size: 16px;
     width: 110%;
     text-align: center;
+    padding-top: 10px;
 }
 .form-group{
     padding-left: 20px;
@@ -66,4 +67,48 @@ button{
 .cadastrar{
     float: right;
 }
+.menu-editar li{
+    display: inline-flex;
+    list-style: none;
+    margin-right: 20px;
+}
+.menu-editar li:last-child, li:last-child{
+    margin-left: 0px;
+}
+.form-group input, select{
+    min-width: 100%;
+}
+.valor-atributo{
+    padding: 5px;
+    color: #fff;
+    background: blue;
+    width: 25px;
+    height: 25px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+.header-jogador{
+    margin: 20px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.media-jogador{
+    background: green;
+    color: #fff;
+    font-weight: bold;
+    font-size: 24px;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.dados-geral li{
+    list-style: none;
+    font-size: 16px;
+    margin: 5px;
+}
+
 
