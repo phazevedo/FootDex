@@ -130,13 +130,13 @@ namespace FootDex.Controllers
             return RedirectToAction("Index");
         }
 
-        public decimal CalculaMedia(Jogador jogador)
+        public int CalculaMedia(Jogador jogador)
         {
             decimal Media = 0;
             Media = (jogador.Cabeceio + jogador.Carrinho + jogador.Cruzamento + jogador.Dibre + jogador.Finalizacao + jogador.Forca + jogador.HabilidadeGoleiro +
                 jogador.Marcacao + jogador.PasseCurto + jogador.PasseLongo + jogador.Velocidade + jogador.VisaoDeJogo);
             Media = Media / 12;
-            return Math.Round(Media);
+            return (int)Math.Round(Media);
         }
 
         protected override void Dispose(bool disposing)

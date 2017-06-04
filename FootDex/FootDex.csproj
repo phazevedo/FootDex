@@ -212,6 +212,10 @@
     <Compile Include="Migrations\201706042010191_Campos null.Designer.cs">
       <DependentUpon>201706042010191_Campos null.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201706042332386_Int.cs" />
+    <Compile Include="Migrations\201706042332386_Int.Designer.cs">
+      <DependentUpon>201706042332386_Int.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\ContextoBanco.cs" />
     <Compile Include="Models\Jogador.cs" />
@@ -271,6 +275,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201706042010191_Campos null.resx">
       <DependentUpon>201706042010191_Campos null.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201706042332386_Int.resx">
+      <DependentUpon>201706042332386_Int.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

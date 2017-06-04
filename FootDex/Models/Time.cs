@@ -21,7 +21,8 @@ namespace FootDex.Models
 
         //public virtual ICollection<Jogador> Jogadors { get; set; }
 
-        public decimal mediaATQ() {
+        public decimal mediaATQ()
+        {
             List<Jogador> lstJogadores = getJogadores((int)Posicao.Setor.ATQ);
             decimal media = 0;
             if (lstJogadores.Count < 1)
@@ -32,7 +33,8 @@ namespace FootDex.Models
             }
             return media / lstJogadores.Count;
         }
-        public decimal mediaMEI() {
+        public decimal mediaMEI()
+        {
             List<Jogador> lstJogadores = getJogadores((int)Posicao.Setor.MEI);
             decimal media = 0;
             if (lstJogadores.Count < 1)
@@ -43,7 +45,8 @@ namespace FootDex.Models
             }
             return media / lstJogadores.Count;
         }
-        public decimal mediaDEF() {
+        public decimal mediaDEF()
+        {
             List<Jogador> lstJogadores = getJogadores((int)Posicao.Setor.DEF);
             decimal media = 0;
             if (lstJogadores.Count < 1)
@@ -55,8 +58,11 @@ namespace FootDex.Models
             return media / lstJogadores.Count;
         }
 
-        public List<Jogador> getJogadores(int setor) {
+        public List<Jogador> getJogadores(int? setor = null)
+        {
             ContextoBanco db = new ContextoBanco();
+            if (setor == null)
+                return db.Jogador.Where(j => j.TimeID == ID).ToList();
             return db.Jogador.Where(j => j.TimeID == ID).Where(j => j.Posicao.SetorID == setor).ToList();
         }
     }

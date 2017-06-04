@@ -11,6 +11,7 @@
     var atq = (decimal)ViewData["MediaATQ"];
     var mei = (decimal)ViewData["MediaMEI"];
     var def = (decimal)ViewData["MediaDEF"];
+    List<Jogador> lstJogadores = (List<Jogador>)ViewData["Jogadores"];
 }
 
 <div>
@@ -58,6 +59,42 @@
 
     </dl>
 </div>
+<table class="table">
+    <tr>
+        <th>Nome</th>
+        <th>DataNascimento</th>
+        <th>Posicao</th>
+        <th>Time</th>
+        <th>Media</th>
+    </tr>
+
+    @foreach (Jogador item in @lstJogadores)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nome)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DataNascimento)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Posicao.Descricao)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Time.Nome)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Media)
+            </td>
+            <td>
+                @Html.ActionLink("Editar", "Edit", "Jogadors", new { id = item.ID }, null)
+                @Html.ActionLink("Detalhes", "Details", "Jogadors", new { id = item.ID }, null)
+            </td>
+        </tr>
+    }
+
+</table>
+
 <p>
     @Html.ActionLink("Edit", "Edit", new { id = @time.ID }) |
     @Html.ActionLink("Back to List", "Index")

@@ -21,7 +21,7 @@ namespace FootDex.Models
         [DisplayName("Posição")]
         public int PosicaoID { get; set; }
         [DisplayName("Média")]
-        public decimal Media { get; set; }
+        public int Media { get; set; }
         [DisplayName("Time")]
         public int? TimeID { get; set; }
 

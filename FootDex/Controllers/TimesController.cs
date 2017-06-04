@@ -38,7 +38,7 @@ namespace FootDex.Controllers
             ViewData["MediaATQ"] = time.mediaATQ();
             ViewData["MediaMEI"] = time.mediaMEI();
             ViewData["MediaDEF"] = time.mediaDEF();
-
+            ViewData["Jogadores"] = time.getJogadores();
             return View();
         }
 
@@ -130,7 +130,7 @@ namespace FootDex.Controllers
         {
             decimal Media = 0;
             int contador = 0;
-            foreach(Jogador Jogador in jogadores)
+            foreach (Jogador Jogador in jogadores)
             {
                 Media += Jogador.Media;
                 contador++;
