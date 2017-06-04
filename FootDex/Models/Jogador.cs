@@ -84,5 +84,14 @@ namespace FootDex.Models
         {
             return (Forca + HabilidadeGoleiro + Marcacao + Carrinho)/4;
         }
+
+        public decimal mediaGeral()
+        {
+            decimal Media = 0;
+            Media = (Cabeceio + Carrinho + Cruzamento + Dibre + Finalizacao + Forca + HabilidadeGoleiro +
+                Marcacao + PasseCurto + PasseLongo + Velocidade + VisaoDeJogo);
+            Media = Media / 12;
+            return Math.Round(Media);
+        }
     }
 }

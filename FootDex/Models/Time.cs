@@ -21,36 +21,36 @@ namespace FootDex.Models
 
         //public virtual ICollection<Jogador> Jogadors { get; set; }
 
-        public double mediaATQ() {
+        public decimal mediaATQ() {
             List<Jogador> lstJogadores = getJogadores((int)Posicao.Setor_teste.ATQ);
-            double media = 0;
+            decimal media = 0;
             if (lstJogadores.Count < 1)
                 return 0;
             foreach (Jogador jog in lstJogadores)
             {
-                media += jog.mediaATQ();
+                media += jog.mediaGeral();
             }
             return media / lstJogadores.Count;
         }
-        public double mediaMEI() {
+        public decimal mediaMEI() {
             List<Jogador> lstJogadores = getJogadores((int)Posicao.Setor_teste.MEI);
-            double media = 0;
+            decimal media = 0;
             if (lstJogadores.Count < 1)
                 return 0;
             foreach (Jogador jog in lstJogadores)
             {
-                media += jog.mediaMEI();
+                media += jog.mediaGeral();
             }
             return media / lstJogadores.Count;
         }
-        public double mediaDEF() {
+        public decimal mediaDEF() {
             List<Jogador> lstJogadores = getJogadores((int)Posicao.Setor_teste.DEF);
-            double media = 0;
+            decimal media = 0;
             if (lstJogadores.Count < 1)
                 return 0;
             foreach (Jogador jog in lstJogadores)
             {
-                media += jog.mediaDEF();
+                media += jog.mediaGeral();
             }
             return media / lstJogadores.Count;
         }
