@@ -12,7 +12,6 @@ namespace FootDex.Models
 
         public DbSet<Jogador> Jogador { get; set; }
         public DbSet<Posicao> Posicao { get; set; }
-        public DbSet<Setor> Setor { get; set; }
         public DbSet<Tecnico> Tecnico { get; set; }
         public DbSet<Time> Time { get; set; }
 

@@ -15,14 +15,14 @@ namespace FootDex.Models
         public string Nome { get; set; }
         [Required]
         [DisplayName("Técnico")]
-        public int TecnicoID { get; set; }
+        public int? TecnicoID { get; set; }
 
         public virtual Tecnico Tecnico { get; set; }
 
         //public virtual ICollection<Jogador> Jogadors { get; set; }
 
         public decimal mediaATQ() {
-            List<Jogador> lstJogadores = getJogadores((int)Posicao.Setor_teste.ATQ);
+            List<Jogador> lstJogadores = getJogadores((int)Posicao.Setor.ATQ);
             decimal media = 0;
             if (lstJogadores.Count < 1)
                 return 0;
@@ -33,7 +33,7 @@ namespace FootDex.Models
             return media / lstJogadores.Count;
         }
         public decimal mediaMEI() {
-            List<Jogador> lstJogadores = getJogadores((int)Posicao.Setor_teste.MEI);
+            List<Jogador> lstJogadores = getJogadores((int)Posicao.Setor.MEI);
             decimal media = 0;
             if (lstJogadores.Count < 1)
                 return 0;
@@ -44,7 +44,7 @@ namespace FootDex.Models
             return media / lstJogadores.Count;
         }
         public decimal mediaDEF() {
-            List<Jogador> lstJogadores = getJogadores((int)Posicao.Setor_teste.DEF);
+            List<Jogador> lstJogadores = getJogadores((int)Posicao.Setor.DEF);
             decimal media = 0;
             if (lstJogadores.Count < 1)
                 return 0;

@@ -17,8 +17,12 @@ namespace FootDex.Controllers
         // GET: Jogadors
         public ActionResult Index()
         {
-            var jogador = db.Jogador.Include(j => j.Posicao).Include(j => j.Time);
-            return View(jogador.ToList());
+            PopulatePosicao();
+            List<Jogador> lstJog = new List<Jogador>();
+            var jogs = db.Jogador.Include(j => j.Posicao).Include(jog => jog.Time);
+            if (jogs.Any())
+                lstJog = jogs.ToList();
+            return View(lstJog);
         }
 
         // GET: Jogadors/Details/5
@@ -142,6 +146,27 @@ namespace FootDex.Controllers
                 db.Dispose();
             }
             base.Dispose(disposing);
+        }
+
+        private void PopulatePosicao()
+        {
+            if (db.Posicao.Count() == 0)
+            {
+                db.Posicao.Add(new Posicao("Goleiro", (int)Posicao.Setor.DEF));
+                db.Posicao.Add(new Posicao("Zagueiro", (int)Posicao.Setor.DEF));
+                db.Posicao.Add(new Posicao("Lateral Esquerdo", (int)Posicao.Setor.DEF));
+                db.Posicao.Add(new Posicao("Lateral Direito", (int)Posicao.Setor.DEF));
+                db.Posicao.Add(new Posicao("Volante", (int)Posicao.Setor.MEI));
+                db.Posicao.Add(new Posicao("Meio Campo", (int)Posicao.Setor.MEI));
+                db.Posicao.Add(new Posicao("Meia Esquerdo", (int)Posicao.Setor.MEI));
+                db.Posicao.Add(new Posicao("Meia Direito", (int)Posicao.Setor.MEI));
+                db.Posicao.Add(new Posicao("Meia Atacante", (int)Posicao.Setor.MEI));
+                db.Posicao.Add(new Posicao("Cetro Avante", (int)Posicao.Setor.ATQ));
+                db.Posicao.Add(new Posicao("Segundo Atacante", (int)Posicao.Setor.ATQ));
+                db.Posicao.Add(new Posicao("Ponta Direita", (int)Posicao.Setor.ATQ));
+                db.Posicao.Add(new Posicao("Ponta Esquerda", (int)Posicao.Setor.ATQ));
+                db.SaveChanges();
+            }
         }
     }
 }

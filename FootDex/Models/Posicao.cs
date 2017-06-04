@@ -9,7 +9,7 @@ namespace FootDex.Models
 {
     public class Posicao
     {
-        public enum Setor_teste { ATQ = 1, MEI, DEF}
+        public enum Setor { ATQ = 1, MEI, DEF }
         public int ID { get; set; }
         [Required]
         [DisplayName("Descrição")]
@@ -18,6 +18,15 @@ namespace FootDex.Models
         [DisplayName("Setor")]
         public int SetorID { get; set; }
 
-        public virtual Setor Setor { get; set; }
+
+        public Posicao(string descricao, int setor)
+        {
+            Descricao = descricao;
+            SetorID = setor;
+        }
+
+        public Posicao() { }
+
     }
+
 }

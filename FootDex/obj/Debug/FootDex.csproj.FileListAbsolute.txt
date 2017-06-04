@@ -317,3 +317,17 @@ C:\Users\Claudio\Desktop\FootDex\FootDex\obj\Debug\FootDex.Migrations.RemovePeso
 C:\Users\Claudio\Desktop\FootDex\FootDex\obj\Debug\FootDex.csproj.GenerateResource.Cache
 C:\Users\Claudio\Desktop\FootDex\FootDex\obj\Debug\FootDex.dll
 C:\Users\Claudio\Desktop\FootDex\FootDex\obj\Debug\FootDex.pdb
+C:\Users\Pedro\Documents\Visual Studio 2013\Projects\TestesFootDex\Footdex\FootDex\bin\Antlr3.Runtime.dll
+C:\Users\Pedro\Documents\Visual Studio 2013\Projects\TestesFootDex\Footdex\FootDex\bin\EnumHelper.dll
+C:\Users\Pedro\Documents\Visual Studio 2013\Projects\TestesFootDex\Footdex\FootDex\bin\EnumUtils.dll
+C:\Users\Pedro\Documents\Visual Studio 2013\Projects\TestesFootDex\Footdex\FootDex\bin\Newtonsoft.Json.dll
+C:\Users\Pedro\Documents\Visual Studio 2013\Projects\TestesFootDex\Footdex\FootDex\bin\System.Web.Optimization.dll
+C:\Users\Pedro\Documents\Visual Studio 2013\Projects\TestesFootDex\Footdex\FootDex\bin\WebGrease.dll
+C:\Users\Pedro\Documents\Visual Studio 2013\Projects\TestesFootDex\Footdex\FootDex\bin\Antlr3.Runtime.pdb
+C:\Users\Pedro\Documents\Visual Studio 2013\Projects\TestesFootDex\Footdex\FootDex\bin\EnumUtils.pdb
+C:\Users\Pedro\Documents\Visual Studio 2013\Projects\TestesFootDex\Footdex\FootDex\bin\EnumUtils.xml
+C:\Users\Pedro\Documents\Visual Studio 2013\Projects\TestesFootDex\Footdex\FootDex\bin\Newtonsoft.Json.xml
+C:\Users\Pedro\Documents\Visual Studio 2013\Projects\TestesFootDex\Footdex\FootDex\bin\System.Web.Optimization.xml
+C:\Users\Pedro\Documents\Visual Studio 2013\Projects\TestesFootDex\Footdex\FootDex\obj\Debug\FootDex.Migrations.RemoveSetor.resources
+C:\Users\Pedro\Documents\Visual Studio 2013\Projects\TestesFootDex\Footdex\FootDex\obj\Debug\FootDex.Migrations.PosicaoFixa.resources
+C:\Users\Pedro\Documents\Visual Studio 2013\Projects\TestesFootDex\Footdex\FootDex\obj\Debug\FootDex.Migrations.Camposnull.resources

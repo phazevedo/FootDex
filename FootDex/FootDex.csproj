@@ -55,6 +55,12 @@
     <Reference Include="EntityFramework.SqlServer">
       <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
+    <Reference Include="EnumHelper">
+      <HintPath>..\packages\EFEnumHelper.1.0.4\lib\EnumHelper.dll</HintPath>
+    </Reference>
+    <Reference Include="EnumUtils">
+      <HintPath>..\packages\EnumUtils.1.0.3\lib\portable-net45+dnxcore50+wp80+wpa81+win81+netcore45+monoandroid10+monotouch10+xamarin.ios10\EnumUtils.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.AI.Agent.Intercept, Version=1.2.0.1011, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.ApplicationInsights.Agent.Intercept.1.2.0\lib\net45\Microsoft.AI.Agent.Intercept.dll</HintPath>
       <Private>True</Private>
@@ -181,8 +187,6 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\JogadorsController.cs" />
-    <Compile Include="Controllers\PosicaosController.cs" />
-    <Compile Include="Controllers\SetorsController.cs" />
     <Compile Include="Controllers\TecnicoesController.cs" />
     <Compile Include="Controllers\TimesController.cs" />
     <Compile Include="Global.asax.cs">
@@ -196,11 +200,22 @@
     <Compile Include="Migrations\201706030126444_RemovePesosSetor.Designer.cs">
       <DependentUpon>201706030126444_RemovePesosSetor.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201706041808095_RemoveSetor.cs" />
+    <Compile Include="Migrations\201706041808095_RemoveSetor.Designer.cs">
+      <DependentUpon>201706041808095_RemoveSetor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201706041925508_PosicaoFixa.cs" />
+    <Compile Include="Migrations\201706041925508_PosicaoFixa.Designer.cs">
+      <DependentUpon>201706041925508_PosicaoFixa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201706042010191_Campos null.cs" />
+    <Compile Include="Migrations\201706042010191_Campos null.Designer.cs">
+      <DependentUpon>201706042010191_Campos null.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\ContextoBanco.cs" />
     <Compile Include="Models\Jogador.cs" />
     <Compile Include="Models\Posicao.cs" />
-    <Compile Include="Models\Setor.cs" />
     <Compile Include="Models\Tecnico.cs" />
     <Compile Include="Models\Time.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -221,16 +236,6 @@
     <Content Include="Views\Jogadors\Details.cshtml" />
     <Content Include="Views\Jogadors\Edit.cshtml" />
     <Content Include="Views\Jogadors\Index.cshtml" />
-    <Content Include="Views\Posicaos\Create.cshtml" />
-    <Content Include="Views\Posicaos\Delete.cshtml" />
-    <Content Include="Views\Posicaos\Details.cshtml" />
-    <Content Include="Views\Posicaos\Edit.cshtml" />
-    <Content Include="Views\Posicaos\Index.cshtml" />
-    <Content Include="Views\Setors\Create.cshtml" />
-    <Content Include="Views\Setors\Delete.cshtml" />
-    <Content Include="Views\Setors\Details.cshtml" />
-    <Content Include="Views\Setors\Edit.cshtml" />
-    <Content Include="Views\Setors\Index.cshtml" />
     <Content Include="Views\Tecnicoes\Create.cshtml" />
     <Content Include="Views\Tecnicoes\Delete.cshtml" />
     <Content Include="Views\Tecnicoes\Details.cshtml" />
@@ -257,6 +262,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201706030126444_RemovePesosSetor.resx">
       <DependentUpon>201706030126444_RemovePesosSetor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201706041808095_RemoveSetor.resx">
+      <DependentUpon>201706041808095_RemoveSetor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201706041925508_PosicaoFixa.resx">
+      <DependentUpon>201706041925508_PosicaoFixa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201706042010191_Campos null.resx">
+      <DependentUpon>201706042010191_Campos null.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
