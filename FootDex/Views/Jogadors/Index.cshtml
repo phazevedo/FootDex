@@ -6,17 +6,13 @@
 
 <h2>Index</h2>
 
-<p>
-    @Html.ActionLink("Create New", "Create")
-</p>
+<button class="adicionar">
+    <a href="@Url.Action("Create", "Jogadors")" class="teste">
+        <i class="fa fa-plus" aria-hidden="true"></i>
+    </a>
+</button>
 <table class="table">
     <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.Posicao.Descricao)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Time.Nome)
-        </th>
         <th>
             @Html.DisplayNameFor(model => model.Nome)
         </th>
@@ -24,55 +20,18 @@
             @Html.DisplayNameFor(model => model.DataNascimento)
         </th>
         <th>
+            @Html.DisplayNameFor(model => model.Posicao.Descricao)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Time.Nome)
+        </th>
+        <th>
             @Html.DisplayNameFor(model => model.Media)
         </th>
-        <th>
-            @Html.DisplayNameFor(model => model.HabilidadeGoleiro)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Forca)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Marcacao)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Carrinho)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.PasseCurto)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.PasseLongo)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Cruzamento)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.VisaoDeJogo)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Finalizacao)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Cabeceio)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Dibre)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Velocidade)
-        </th>
-        <th></th>
     </tr>
 
 @foreach (var item in Model) {
     <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.Posicao.Descricao)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Time.Nome)
-        </td>
         <td>
             @Html.DisplayFor(modelItem => item.Nome)
         </td>
@@ -80,43 +39,13 @@
             @Html.DisplayFor(modelItem => item.DataNascimento)
         </td>
         <td>
+            @Html.DisplayFor(modelItem => item.Posicao.Descricao)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Time.Nome)
+        </td>
+        <td>
             @Html.DisplayFor(modelItem => item.Media)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.HabilidadeGoleiro)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Forca)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Marcacao)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Carrinho)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.PasseCurto)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.PasseLongo)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Cruzamento)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.VisaoDeJogo)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Finalizacao)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Cabeceio)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Dibre)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Velocidade)
         </td>
         <td>
             @Html.ActionLink("Edit", "Edit", new { id=item.ID }) |

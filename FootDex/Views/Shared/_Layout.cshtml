@@ -5,11 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title - My ASP.NET Application</title>
     <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/style.css" rel="stylesheet" type="text/css" />
     <link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <script src="~/Scripts/modernizr-2.6.2.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar navbar-default navbar-fixed-top menu">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -17,7 +19,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                @Html.ActionLink("FootDex", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
@@ -25,16 +27,10 @@
                         @Html.ActionLink("Jogadores", "Index", "Jogadors", new { area = "" }, new { @class = "" })
                     </li>
                     <li>
-                        @Html.ActionLink("Posições", "Index", "Posicaos", new { area = "" }, new { @class = "" })
-                    </li>
-                    <li>
-                        @Html.ActionLink("Setores", "Index", "Setors", new { area = "" }, new { @class = "" })
+                        @Html.ActionLink("Times", "Index", "Times", new { area = "" }, new { @class = "" })
                     </li>
                     <li>
                         @Html.ActionLink("Técnicos", "Index", "Tecnicoes", new { area = "" }, new { @class = "" })
-                    </li>
-                    <li>
-                        @Html.ActionLink("Times", "Index", "Times", new { area = "" }, new { @class = "" })
                     </li>
                 </ul>
             </div>
@@ -45,7 +41,7 @@
         @RenderBody()
         <hr />
         <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+            <p>&copy; @DateTime.Now.Year - Claudio Junior, Marcelo Sassá e Pedro Alves.</p>
         </footer>
     </div>
 

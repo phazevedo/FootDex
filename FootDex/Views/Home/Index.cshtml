@@ -2,6 +2,61 @@
 @{
     ViewBag.Title = "Index";
 }
-
-<h2>Index</h2>
+<link href="~/Content/style.css" rel="stylesheet" type="text/css" />
+<div class="row principal">
+    <div class="col-md-4 col-sm-4">
+        <div class="thumbnail">
+            <div class="caption">
+                <i class="fa fa-users icone" aria-hidden="true" style="font-size: 120px;"></i>
+                <h4>Jogadores</h4>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <button class="btn btn-danger">
+                            @Html.ActionLink("Cadastrar", "Create", "Jogadors", new { area = "" }, new { @class = "" })
+                        </button>
+                        <button class="btn btn-success">
+                            @Html.ActionLink("Ver Todos", "Index", "Jogadors", new { area = "" }, new { @class = "" })
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4 col-sm-4">
+        <div class="thumbnail">
+            <div class="caption">
+                <i class="fa fa-shield icone" aria-hidden="true" style="font-size: 120px;"></i>
+                <h4>Times</h4>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <button class="btn btn-danger">
+                            @Html.ActionLink("Cadastrar", "Create", "Jogadors", new { area = "" }, new { @class = "" })
+                        </button>
+                        <button class="btn btn-success">
+                            @Html.ActionLink("Ver Todos", "Index", "Jogadors", new { area = "" }, new { @class = "" })
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4 col-sm-4">
+        <div class="thumbnail">
+            <div class="caption">
+                <i class="fa fa-pencil-square-o icone" aria-hidden="true" style="font-size: 120px;"></i>
+                <h4>Técnicos</h4>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <button class="btn btn-danger">
+                            @Html.ActionLink("Cadastrar", "Create", "Jogadors", new { area = "" }, new { @class = "" })
+                        </button>
+                        <button class="btn btn-success">
+                            @Html.ActionLink("Ver Todos", "Index", "Jogadors", new { area = "" }, new { @class = "" })
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> 
 

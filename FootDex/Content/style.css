@@ -1,0 +1,69 @@
+﻿/*----------DEFAULT----------*/
+a, a:hover, a:visited> a:active{
+    text-decoration: none;
+}
+/*----------CABEÇALHO----------*/
+
+/*----------HOME----------*/
+.principal{
+    margin-top: 50px;
+}
+.thumbnail{
+}
+.caption{
+    text-align: center;
+    margin: 20px;
+}
+.caption a, a:hover{
+    color: #fff;
+}
+.icone{
+    font-size: 120px;
+}
+h4{
+    padding: 20px;
+    height: auto;
+}
+i{
+    width: 100%;
+    text-align: center;
+}
+button{
+    margin: 5px;
+}
+
+/*----------JOGADOR----------*/
+.adicionar{
+    background: red;
+    float: right;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    border: none;
+    margin-bottom: 20px;
+}
+.adicionar a, .adicionar a i:hover{
+    color: #fff;
+    font-size: 22px;
+}
+.control-label{
+    font-size: 12px;
+}
+.dados-jogador{
+    border: 1px solid #e7e7e7;
+    padding: 5px 25px 0px 5px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+.titulo-setores{
+    font-size: 16px;
+    width: 110%;
+    text-align: center;
+}
+.form-group{
+    padding-left: 20px;
+}
+.cadastrar{
+    float: right;
+}
+
