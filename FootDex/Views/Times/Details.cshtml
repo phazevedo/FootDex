@@ -4,7 +4,7 @@
     ViewBag.Title = "Informações do time";
 }
 
-<h2>Details</h2>
+<h3>Detalhes Time</h3><hr />
 
 @{
     var time = (Time)ViewData["Time"];
@@ -14,57 +14,37 @@
     List<Jogador> lstJogadores = (List<Jogador>)ViewData["Jogadores"];
 }
 
-<div>
-    <h4>Time</h4>
-    <hr />
-    <dl class="dl-horizontal">
-        <dt>
-            Nome do Técnico:
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => @time.Tecnico.Nome)
-        </dd>
-
-        <dt>
-            Nome do Time:
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => @time.Nome)
-        </dd>
-        <dt>
-            Media ataque:
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => @atq)
-        </dd>
-        <dt>
-            Media mei:
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => @mei)
-        </dd>
-        <dt>
-            Media def:
-        </dt>
-
-        <dd>
+<div class="row header-jogador">
+    <div class="col-lg-3">
+        <i class="fa fa-shield" aria-hidden="true" style="font-size: 120px;"></i>
+    </div>
+    <div class="col-lg-3">
+        <ul class="dados-geral">
+            <li>@Html.DisplayFor(model => @time.Nome)</li>
+            <li>@Html.DisplayFor(model => @time.Tecnico.Nome)</li>
+        </ul>
+    </div>
+    <div class="col-lg-2">
+        DEF
+        <div class="media-jogador">
             @Html.DisplayFor(model => @def)
-        </dd>
-
-
-
-    </dl>
+        </div>
+    </div>
+    <div class="col-lg-2">
+        MEI
+        <div class="media-jogador">@Html.DisplayFor(model => @mei)</div>
+    </div>
+    <div class="col-lg-2">
+        ATQ
+        <div class="media-jogador">@Html.DisplayFor(model => @atq)</div>
+    </div>
 </div>
+
 <table class="table">
     <tr>
         <th>Nome</th>
         <th>DataNascimento</th>
         <th>Posicao</th>
-        <th>Time</th>
         <th>Media</th>
     </tr>
 
@@ -81,21 +61,32 @@
                 @Html.DisplayFor(modelItem => item.Posicao.Descricao)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Time.Nome)
-            </td>
-            <td>
                 @Html.DisplayFor(modelItem => item.Media)
             </td>
-            <td>
-                @Html.ActionLink("Editar", "Edit", "Jogadors", new { id = item.ID }, null)
-                @Html.ActionLink("Detalhes", "Details", "Jogadors", new { id = item.ID }, null)
-            </td>
+            <!--<td>
+                <ul class="menu-editar">
+                    <li>
+                        <a href="@Url.Action("Edit", "Jogadors", new { id = item.ID }, null)">
+                            <i class="fa fa-pencil" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="@Url.Action("Details", "Jogadors", new { id = item.ID }, null)">
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="@Url.Action("Delete", "Jogadors", new { id = item.ID }, null)">
+                            <i class="fa fa-trash-o" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                </ul>
+            </td>-->
         </tr>
     }
 
 </table>
 
 <p>
-    @Html.ActionLink("Edit", "Edit", new { id = @time.ID }) |
-    @Html.ActionLink("Back to List", "Index")
+    @Html.ActionLink("<< Voltar", "Index") | @Html.ActionLink("Editar", "Edit", new { id = @time.ID })
 </p>

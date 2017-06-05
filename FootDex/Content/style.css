@@ -41,10 +41,13 @@ button{
     border-radius: 50px;
     border: none;
     margin-bottom: 20px;
+    display: flex;
+    align-items: center;
 }
-.adicionar a, .adicionar a:hover, .adicionar a::after{
+.adicionar, .adicionar:hover, .adicionar::after, .adicionar:active, .adicionar:visited{
     color: #fff;
     font-size: 22px;
+    text-decoration: none;
 }
 .control-label{
     font-size: 12px;
@@ -81,13 +84,31 @@ button{
 .valor-atributo{
     padding: 5px;
     color: #fff;
-    background: blue;
+    /*background: #8dc153;*/
+    font-weight: bold;
     width: 25px;
     height: 25px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
 }
+
+/*.valor-atributo-pessimo{
+    background: red;
+}
+.valor-atributo-ruim{
+    background: orange;
+}
+.valor-atributo-regular{
+    background: yellow;
+}
+.valor-atributo-bom{
+    background: green;
+}
+.valor-atributo-otimo{
+    background: blue;
+}*/
+
 .header-jogador{
     margin: 20px 0px;
     display: flex;
@@ -95,12 +116,12 @@ button{
     justify-content: center;
 }
 .media-jogador{
-    /*background: green;*/
+    background: #8dc153;
     color: #fff;
     font-weight: bold;
     font-size: 24px;
-    width: 100px;
-    height: 100px;
+    width: 60px;
+    height: 60px;
     display: flex;
     align-items: center;
     justify-content: center;
