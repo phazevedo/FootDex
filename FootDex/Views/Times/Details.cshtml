@@ -8,9 +8,9 @@
 
 @{
     var time = (Time)ViewData["Time"];
-    var atq = (decimal)ViewData["MediaATQ"];
-    var mei = (decimal)ViewData["MediaMEI"];
-    var def = (decimal)ViewData["MediaDEF"];
+    var atq = Convert.ToInt32(ViewData["MediaATQ"]);
+    var mei = Convert.ToInt32(ViewData["MediaMEI"]);
+    var def = Convert.ToInt32(ViewData["MediaDEF"]);
     List<Jogador> lstJogadores = (List<Jogador>)ViewData["Jogadores"];
 }
 
@@ -20,24 +20,29 @@
     </div>
     <div class="col-lg-3">
         <ul class="dados-geral">
-            <li>@Html.DisplayFor(model => @time.Nome)</li>
-            <li>@Html.DisplayFor(model => @time.Tecnico.Nome)</li>
+            <li>
+                <i class="fa fa-shield icones-geral" aria-hidden="true"></i>
+                @Html.DisplayFor(model => @time.Nome)
+            </li>
+            <li>
+                <i class="fa fa-user icones-geral" aria-hidden="true"></i>
+                @Html.DisplayFor(model => @time.Tecnico.Nome)
+            </li>
         </ul>
     </div>
     <div class="col-lg-2">
-        DEF
-        <div class="media-jogador">
-            @Html.DisplayFor(model => @def)
-        </div>
+        <h6 class="titulo-media">ATQ</h6>
+        <div class="media-jogador" style="background:@MyHelpers.Nota(@atq)">@Html.DisplayFor(model => @atq)</div>
     </div>
     <div class="col-lg-2">
-        MEI
-        <div class="media-jogador">@Html.DisplayFor(model => @mei)</div>
+        <h6 class="titulo-media">MEI</h6>
+        <div class="media-jogador" style="background:@MyHelpers.Nota(@mei)">@Html.DisplayFor(model => @mei)</div>
     </div>
     <div class="col-lg-2">
-        ATQ
-        <div class="media-jogador">@Html.DisplayFor(model => @atq)</div>
+        <h6 class="titulo-media">DEF</h6>
+        <div class="media-jogador" style="background:@MyHelpers.Nota(@def)">@Html.DisplayFor(model => @def)</div>
     </div>
+    
 </div>
 
 <table class="table">
@@ -61,27 +66,8 @@
                 @Html.DisplayFor(modelItem => item.Posicao.Descricao)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Media)
+                <div class="valor-atributo" style="background:@MyHelpers.Nota(@item.Media)">@Html.DisplayFor(modelItem => item.Media)</div>
             </td>
-            <!--<td>
-                <ul class="menu-editar">
-                    <li>
-                        <a href="@Url.Action("Edit", "Jogadors", new { id = item.ID }, null)">
-                            <i class="fa fa-pencil" aria-hidden="true"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="@Url.Action("Details", "Jogadors", new { id = item.ID }, null)">
-                            <i class="fa fa-search" aria-hidden="true"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="@Url.Action("Delete", "Jogadors", new { id = item.ID }, null)">
-                            <i class="fa fa-trash-o" aria-hidden="true"></i>
-                        </a>
-                    </li>
-                </ul>
-            </td>-->
         </tr>
     }
 

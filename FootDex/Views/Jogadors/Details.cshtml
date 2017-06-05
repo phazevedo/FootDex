@@ -7,25 +7,37 @@
 <h3>Detalhes Jogador</h3><hr />
 
 <div class="row header-jogador">
-    <div class="col-lg-3">
+    <div class="col-md-3">
         <i class="fa fa-user" aria-hidden="true" style="font-size: 120px;"></i>
     </div>
-    <div class="col-lg-7">
+    <div class="col-md-7">
         <ul class="dados-geral">
-            <li>@Html.DisplayFor(model => model.Nome)</li>
-            <li>@Html.DisplayFor(model => model.DataNascimento)</li>
-            <li>@Html.DisplayFor(model => model.Posicao.Descricao)</li>
-            <li>@Html.DisplayFor(model => model.Time.Nome)</li>
+            <li>
+                <i class="fa fa-pencil-square-o icones-geral" aria-hidden="true"></i>
+                @Html.DisplayFor(model => model.Nome)
+            </li>
+            <li>
+                <i class="fa fa-birthday-cake icones-geral" aria-hidden="true"></i>
+                @Html.DisplayFor(model => model.DataNascimento)
+            </li>
+            <li>
+                <i class="fa fa-futbol-o icones-geral" aria-hidden="true"></i>
+                @Html.DisplayFor(model => model.Posicao.Descricao)
+            </li>
+            <li>
+                <i class="fa fa-shield icones-geral" aria-hidden="true"></i>
+                @Html.DisplayFor(model => model.Time.Nome)
+            </li>
         </ul>
     </div>
-    <div class="col-lg-2">
-        <div class="media-jogador">@Html.DisplayFor(model => model.Media)</div>
+    <div class="col-md-2">
+        <div class="media-jogador" style="background:@MyHelpers.Nota(@Model.Media)">@Html.DisplayFor(model => model.Media)</div>
     </div>
 </div>
 <div class="row">
     <div class="col-lg-4">
         <ul class="list-group">
-            <li class="list-group-item list-group-item-heading">Defesa</li>
+            <li class="list-group-item list-group-item-heading header-lista">Defesa</li>
             <li class="list-group-item">
                 <div class="valor-atributo" style="background:@MyHelpers.Nota(@Model.HabilidadeGoleiro)">@Html.DisplayFor(model => model.HabilidadeGoleiro)</div>
                 @Html.DisplayNameFor(model => model.HabilidadeGoleiro)
@@ -46,7 +58,7 @@
     </div>
     <div class="col-lg-4">
         <ul class="list-group">
-            <li class="list-group-item list-group-item-heading">Meio Campo</li>
+            <li class="list-group-item list-group-item-heading header-lista">Meio Campo</li>
             <li class="list-group-item">
                 <div class="valor-atributo" style="background:@MyHelpers.Nota(@Model.PasseCurto)">@Html.DisplayFor(model => model.PasseCurto)</div>
                 @Html.DisplayNameFor(model => model.PasseCurto)
@@ -67,7 +79,7 @@
     </div>
     <div class="col-lg-4">
         <ul class="list-group">
-            <li class="list-group-item list-group-item-heading">Ataque</li>
+            <li class="list-group-item list-group-item-heading header-lista">Ataque</li>
             <li class="list-group-item">
                 <div class="valor-atributo" style="background:@MyHelpers.Nota(@Model.Finalizacao)">
                 @Html.DisplayFor(model => model.Finalizacao)</div>

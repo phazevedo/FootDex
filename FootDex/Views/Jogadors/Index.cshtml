@@ -48,7 +48,9 @@
             @Html.DisplayFor(modelItem => item.Time.Nome)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.Media)
+            <div class="valor-atributo" style="background:@MyHelpers.Nota(@item.Media)">
+                @Html.DisplayFor(modelItem => item.Media)
+            </div>
         </td>
         <td>
             <ul class="menu-editar">

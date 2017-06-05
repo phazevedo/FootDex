@@ -1,25 +1,26 @@
 ﻿@helper Nota(int nota)
 {
-    string cor = "black";
-    if (nota < 51){
-        cor = "#e9573e";
-    }
+string cor = "black";
+if (nota < 51){
+    cor = "#e9573e";
+}
+else
+{
+    if(nota < 66){
+        cor = "#e77e23";}
     else
     {
-        if(nota < 66){
-            cor = "#e77e23";}
+        if(nota < 75){
+            cor = "#f6bb43";}
         else
         {
-            if(nota < 75){
-                cor = "#f6bb43";}
-            else
-            {
-                if (nota < 82){
-                    cor = "#8dc153";}
-                else {
-                    cor = "#93caab";}
+            if (nota < 82){
+                cor = "#8dc153";}
+            else {
+                cor = "#239454";
             }
         }
     }
+}
     @:@cor;
 }

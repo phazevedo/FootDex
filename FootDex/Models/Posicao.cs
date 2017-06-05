@@ -12,7 +12,7 @@ namespace FootDex.Models
         public enum Setor { ATQ = 1, MEI, DEF }
         public int ID { get; set; }
         [Required]
-        [DisplayName("Descrição")]
+        [DisplayName("Posição")]
         public string Descricao { get; set; }
         [Required]
         [DisplayName("Setor")]

@@ -11,7 +11,7 @@ namespace FootDex.Models
     {
         public int ID { get; set; }
         [Required]
-        [DisplayName("Nome")]
+        [DisplayName("Técnico")]
         public string Nome { get; set; }
         [DisplayName("Data de Nascimento")]
         [DataType(DataType.Date)]

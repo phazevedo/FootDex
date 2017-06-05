@@ -20,7 +20,7 @@
         </ul>
     </div>
     <div class="col-lg-2">
-        <div class="media-jogador">@Html.DisplayFor(model => model.Media)</div>
+        <div class="media-jogador" style="background:@MyHelpers.Nota(@Model.Media)">@Html.DisplayFor(model => model.Media)</div>
     </div>
 </div>
 <div class="row">
@@ -28,19 +28,19 @@
         <ul class="list-group">
             <li class="list-group-item list-group-item-heading">Defesa</li>
             <li class="list-group-item">
-                <div class="valor-atributo">@Html.DisplayFor(model => model.HabilidadeGoleiro)</div>
+                <div class="valor-atributo" style="background:@MyHelpers.Nota(@Model.HabilidadeGoleiro)">@Html.DisplayFor(model => model.HabilidadeGoleiro)</div>
                 @Html.DisplayNameFor(model => model.HabilidadeGoleiro)
             </li>
             <li class="list-group-item">
-                <div class="valor-atributo">@Html.DisplayFor(model => model.Forca)</div>
+                <div class="valor-atributo" style="background:@MyHelpers.Nota(@Model.Forca)">@Html.DisplayFor(model => model.Forca)</div>
                 @Html.DisplayNameFor(model => model.Forca)
             </li>
             <li class="list-group-item">
-                <div class="valor-atributo">@Html.DisplayFor(model => model.Marcacao)</div>
+                <div class="valor-atributo" style="background:@MyHelpers.Nota(@Model.Marcacao)">@Html.DisplayFor(model => model.Marcacao)</div>
                 @Html.DisplayNameFor(model => model.Marcacao)
             </li>
             <li class="list-group-item">
-                <div class="valor-atributo">@Html.DisplayFor(model => model.Carrinho)</div>
+                <div class="valor-atributo" style="background:@MyHelpers.Nota(@Model.Carrinho)">@Html.DisplayFor(model => model.Carrinho)</div>
                 @Html.DisplayNameFor(model => model.Carrinho)
             </li>
         </ul>
@@ -49,19 +49,19 @@
         <ul class="list-group">
             <li class="list-group-item list-group-item-heading">Meio Campo</li>
             <li class="list-group-item">
-                <div class="valor-atributo">@Html.DisplayFor(model => model.PasseCurto)</div>
+                <div class="valor-atributo" style="background:@MyHelpers.Nota(@Model.PasseCurto)">@Html.DisplayFor(model => model.PasseCurto)</div>
                 @Html.DisplayNameFor(model => model.PasseCurto)
             </li>
             <li class="list-group-item">
-                <div class="valor-atributo">@Html.DisplayFor(model => model.PasseLongo)</div>
+                <div class="valor-atributo" style="background:@MyHelpers.Nota(@Model.PasseLongo)">@Html.DisplayFor(model => model.PasseLongo)</div>
                 @Html.DisplayNameFor(model => model.PasseLongo)
             </li>
             <li class="list-group-item">
-                <div class="valor-atributo">@Html.DisplayFor(model => model.Cruzamento)</div>
+                <div class="valor-atributo" style="background:@MyHelpers.Nota(@Model.Cruzamento)">@Html.DisplayFor(model => model.Cruzamento)</div>
                 @Html.DisplayNameFor(model => model.Cruzamento)
             </li>
             <li class="list-group-item">
-                <div class="valor-atributo">@Html.DisplayFor(model => model.VisaoDeJogo)</div>
+                <div class="valor-atributo" style="background:@MyHelpers.Nota(@Model.VisaoDeJogo)">@Html.DisplayFor(model => model.VisaoDeJogo)</div>
                 @Html.DisplayNameFor(model => model.VisaoDeJogo)
             </li>
         </ul>
@@ -70,25 +70,27 @@
         <ul class="list-group">
             <li class="list-group-item list-group-item-heading">Ataque</li>
             <li class="list-group-item">
-                <div class="valor-atributo">@Html.DisplayFor(model => model.Finalizacao)</div>
+                <div class="valor-atributo" style="background:@MyHelpers.Nota(@Model.Finalizacao)">
+                    @Html.DisplayFor(model => model.Finalizacao)
+                </div>
                 @Html.DisplayNameFor(model => model.Finalizacao)
             </li>
             <li class="list-group-item">
-                <div class="valor-atributo">@Html.DisplayFor(model => model.Cabeceio)</div>
+                <div class="valor-atributo" style="background:@MyHelpers.Nota(@Model.Cabeceio)">@Html.DisplayFor(model => model.Cabeceio)</div>
                 @Html.DisplayNameFor(model => model.Cabeceio)
             </li>
             <li class="list-group-item">
-                <div class="valor-atributo">@Html.DisplayFor(model => model.Dibre)</div>
+                <div class="valor-atributo" style="background:@MyHelpers.Nota(@Model.Dibre)">@Html.DisplayFor(model => model.Dibre)</div>
                 @Html.DisplayNameFor(model => model.Dibre)
             </li>
             <li class="list-group-item">
-                <div class="valor-atributo">@Html.DisplayFor(model => model.Velocidade)</div>
+                <div class="valor-atributo" style="background:@MyHelpers.Nota(@Model.Velocidade)">@Html.DisplayFor(model => model.Velocidade)</div>
                 @Html.DisplayNameFor(model => model.Velocidade)
             </li>
         </ul>
     </div>
-
-    @using (Html.BeginForm()) {
+    @using (Html.BeginForm())
+    {
         @Html.AntiForgeryToken()
 
         <div class="form-actions no-color">
@@ -101,3 +103,5 @@
         </div>
     }
 </div>
+
+

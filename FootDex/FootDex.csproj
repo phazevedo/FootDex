@@ -217,6 +217,10 @@
     <Compile Include="Migrations\201706042332386_Int.Designer.cs">
       <DependentUpon>201706042332386_Int.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201706051936428_RetirarRequiredTecnicos.cs" />
+    <Compile Include="Migrations\201706051936428_RetirarRequiredTecnicos.Designer.cs">
+      <DependentUpon>201706051936428_RetirarRequiredTecnicos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\ContextoBanco.cs" />
     <Compile Include="Models\Jogador.cs" />
@@ -279,6 +283,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201706042332386_Int.resx">
       <DependentUpon>201706042332386_Int.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201706051936428_RetirarRequiredTecnicos.resx">
+      <DependentUpon>201706051936428_RetirarRequiredTecnicos.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

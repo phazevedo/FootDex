@@ -11,9 +11,8 @@ namespace FootDex.Models
     {
         public int ID { get; set; }
         [Required]
-        [DisplayName("Nome")]
+        [DisplayName("Time")]
         public string Nome { get; set; }
-        [Required]
         [DisplayName("Técnico")]
         public int? TecnicoID { get; set; }
 
