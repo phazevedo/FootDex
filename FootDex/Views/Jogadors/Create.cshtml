@@ -4,15 +4,13 @@
     ViewBag.Title = "Create";
 }
 
-<h2>Create</h2>
+<h3>Cadastrar Jogador</h3><hr />
 
 @using (Html.BeginForm()) 
 {
     @Html.AntiForgeryToken()
     
     <div class="form-horizontal">
-        <h4>Jogador</h4>
-        <hr />
         <div class="row">
             <div class="col-lg-3 col-md-6">
                 <div class="dados-jogador">
@@ -166,13 +164,12 @@
        
 
         <div class="form-group">
-            <div class="col-xs-offset-11 col-xs-1">
+            <div class="col-xs-4">
+                @Html.ActionLink("<< Voltar", "Index")
+            </div>
+            <div class="col-xs-offset-7 col-xs-1">
                 <input type="submit" value="Cadastrar" class="btn btn-success cadastrar" />
             </div>
         </div>
     </div>
 }
-
-<div>
-    @Html.ActionLink("Back to List", "Index")
-</div>

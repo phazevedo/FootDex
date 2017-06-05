@@ -405,3 +405,4 @@ C:\Users\Pedro\Documents\Visual Studio 2013\Projects\teste\FootDex\FootDex\bin\S
 C:\Users\Pedro\Documents\Visual Studio 2013\Projects\teste\FootDex\FootDex\bin\System.Web.Helpers.xml
 C:\Users\Pedro\Documents\Visual Studio 2013\Projects\teste\FootDex\FootDex\bin\System.Web.Mvc.xml
 C:\Users\Pedro\Documents\Visual Studio 2013\Projects\teste\FootDex\FootDex\obj\Debug\FootDex.Migrations.Int.resources
+C:\Users\Claudio\Desktop\FootDex\FootDex\obj\Debug\FootDex.Migrations.Int.resources

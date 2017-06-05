@@ -4,7 +4,7 @@
     ViewBag.Title = "Details";
 }
 
-<h2>Jogador</h2>
+<h3>Detalhes Jogador</h3><hr />
 
 <div class="row header-jogador">
     <div class="col-lg-3">
@@ -41,7 +41,7 @@
             <li class="list-group-item">
                 <div class="valor-atributo">@Html.DisplayFor(model => model.Carrinho)</div>
                 @Html.DisplayNameFor(model => model.Carrinho)
-            </li>
+        </li>
         </ul>
     </div>
     <div class="col-lg-4">
@@ -89,6 +89,5 @@
 </div>
 
 <p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
-    @Html.ActionLink("Back to List", "Index")
+    @Html.ActionLink("<< Voltar", "Index") | @Html.ActionLink("Editar", "Edit", new { id = Model.ID })
 </p>
